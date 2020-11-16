@@ -17,7 +17,7 @@ const path = require('path')
 setGimmeKey('YOUR API KEY')
 
 // get the full path to the file
-const  file_path  = path.join(__dirname, './sample.mp3')
+const file_path = path.join(__dirname, './sample.mp3')
   
 // call 'gimme' method, receive the results and console it
 gimme(file_path, {}, (results) => {
@@ -31,7 +31,7 @@ gimme(file_path, {}, (results) => {
 const {fpcalc} = require('gimme-the-song')
 
 // get the full path to the file
-const  file_path  = path.join(__dirname, './sample.mp3')
+const file_path = path.join(__dirname, './sample.mp3')
 
 // call the method 'fpcalc', receive the results and console it
 fpcalc(file_path, (results) => {
