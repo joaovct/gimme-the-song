@@ -26,7 +26,7 @@ gimme(file_path, {}, (results) => {
 ````
 
 ## Get audio fingerprint
-If you just want to get the audio fingerprint, use the method "fpcalc". Similar to "gimme", it receives an audio file and generates an audio fingerprint. There is no need to set a cliente key if you are using just this method.
+ If you just want to get the audio fingerprint, use the method "fpcalc". Similar to "gimme", it receives an audio file and generates an audio fingerprint. There is no need to set a cliente key if you are using just this method.
 ````javascript
 const {fpcalc} = require('gimme-the-song')
 
@@ -38,3 +38,6 @@ fpcalc(file_path, (results) => {
 	console.log(results.fingerprint, results.duration)
 })
 ````
+
+## Credits
+ I didn't needed to program the audio fingerprint proccess, I just did an implementation for Javascript. So, huge thanks and credits to [Lukáš Lalinský](https://oxygene.sk/) and congratulations to his awesome project [AcoustID](https://acoustid.org/) and also to the guys from [MusicBrainz](https://musicbrainz.org/) who are storing all the fingerprinties. These were the only free open sources projects I found looking for hours on the internet. Thanks for the initiative! 
