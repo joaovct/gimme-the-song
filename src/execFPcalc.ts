@@ -1,6 +1,6 @@
 import {exec} from 'child_process'
 
-const command = 'gimme-the-song-fpcalc'
+const command = process.platform === 'win32' ? 'gimme-the-song-fpcalc' : 'gimme-the-song-fpcalc-linux'
 
 export interface Callback{
     (result: {duration: string, fingerprint: string}): void
