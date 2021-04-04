@@ -7,12 +7,12 @@ export interface Callback{
 }
 
 const execFPcalc = (file: string, callback: Callback) => {
-    exec(`${command} ${file}`, (err, stdout) => {
+    exec(`${command} ${file} -json`, (err, stdout) => {
         if(err){
             throw err
         }
 
-        const [duration, fingerprint] = stdout.split('\r\n').map(str => str.split('=')[1])
+        const {duration, fingerprint} = JSON.parse(stdout)
 
         callback({duration, fingerprint})
     })
