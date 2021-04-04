@@ -34,11 +34,11 @@ export type Results = Array<{
 
 export interface FPcalcResult{
     fingerprint: string
-    duration: string
+    duration: number
 }
 
 export interface RequestTrack{
-    (fingerprint: string, duration: string, configs: Configs): Promise<Results>
+    (duration: number, fingerprint: string, configs: Configs): Promise<Results>
 }
 
 export interface FormatResults{
