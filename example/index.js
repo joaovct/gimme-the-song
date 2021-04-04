@@ -13,4 +13,7 @@ gimme(file_path, {}, (results) => {
     console.log(results)
 })
 
-fpcalc()
+// call 'fpcalc' method, receive the results and console it
+fpcalc(file_path, (results) => {
+    console.log(results)
+})
