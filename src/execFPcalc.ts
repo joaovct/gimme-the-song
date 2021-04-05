@@ -13,7 +13,9 @@ const execFPcalc = (file: string, callback: Callback) => {
             throw err
         }
 
-        const {duration, fingerprint} = JSON.parse(stdout)
+        let {duration, fingerprint} = JSON.parse(stdout)
+
+        duration = Math.floor(duration)
 
         callback({duration, fingerprint})
     })

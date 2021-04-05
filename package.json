@@ -1,6 +1,6 @@
 {
   "name": "gimme-the-song",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Gimme-the-song is a lib that recognize a music from a audio file. Its a Javascript implementation of AcoustId Chromaprint and their service.",
   "author": "joao__vct",
   "url": "https://github.com/joaodjtr/gimme-the-song",
